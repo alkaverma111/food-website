@@ -1,6 +1,12 @@
 /* Navigation */
+#logo img {
+    margin: 0px 139px;
+}
 #navbar{
     flex-direction: column;
+}
+#navbar li {
+    margin: 0px 6px;
 }
 #navbar ul li a{
     font-size: 1rem;
@@ -27,7 +33,9 @@
     flex-direction:column;
 }
 
+
 .box{
+    padding: 28px 22px;
     width: 80%;
 }
 
@@ -37,15 +45,24 @@
 #clients{
   flex-wrap: wrap;
 }
-#clients img{
-    width: 35px;
-    padding: 6px;
+#clients img {
+    width: 50px;
+    padding: 16px;
+    height: 0%;
+}
+#client-section{
+    color: white;
 }
 /* Contact us section */
 
 /* footer */
 /* Utility classes */
-
+#contact-box{
+    width: 100%;
+}
+#contact-box form {
+    width: 70%;
+}
 .h-primary{
 font-size: 26px;
 }

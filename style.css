@@ -56,13 +56,13 @@ img{
     #navbar li a{
         color: white;
         display: block;
-        padding: 0px 22px;
-        border-radius: 20px;
+        padding: 4px 22px;
+        border-radius: 17px;
         text-decoration: none;
     }
     #navbar li a:hover{
-        color: black;
-        background-color:white;
+        background-color: rgb(239, 203, 181);
+        color: #220410; ;
     }
 /* Home Section */
 #home{
@@ -90,7 +90,8 @@ img{
     font-family: 'Bree Serif', serif;
 }
 #home p{
-    color: white;
+    margin-top: 10px;
+    color: #220410;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Bree Serif', serif;
@@ -99,7 +100,7 @@ img{
 .box{
     margin: 0px;
     display: flex;
-    padding: 34px;
+    padding: 16px;
     margin: 5px 10px;
     justify-content: center;
     flex-direction: column;
@@ -107,8 +108,8 @@ img{
     border: 2px solid brown;
     background-color: rgb(252, 249, 237);
     border-radius: 28px;
-    width: 1000px;
-    height: 250px;
+    /* width: 1000px;
+    height: 250px; */
 }
 
 .box img{
@@ -121,7 +122,7 @@ img{
 }
 
 .services{
-    margin: 34px;
+    margin: 44px;
     display: flex;
 }
 .box p{
@@ -157,14 +158,12 @@ img{
     align-items: center;
     height: 100px;
     z-index: -1;
-   
-    
 }
 
-#clients img{
+#clients img {
     padding: 0px 14px;
-    height: 70px;
-    padding: 9px 50px;
+    height: 61px;
+    padding: 9px 36px;
 }
 #contact-box{
     display: flex;
@@ -177,7 +176,7 @@ img{
     border-radius: 9px;
     font-size: 0.6rem;
     width: 100%;
-    padding: 0.5rem;
+    padding: 8px;
 }
 #contact-box form{
     width: 40%;
@@ -200,6 +199,7 @@ footer{
 
 /* Utility Classes */
 .h-primary{
+    margin-top: 37px;
      color:black;
     font-family: 'Bree Serif', serif;
     font-size: 2.5rem; 
@@ -222,6 +222,10 @@ footer{
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(239, 203, 181);
+    color: #220410; ;
 }
 .center{
     text-align: center;
