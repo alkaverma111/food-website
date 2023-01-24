@@ -1,0 +1,239 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+--navbar-height:59px;
+}
+/* Navigation bar */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+img{
+    height: 100px;
+}
+ /* Navigation Bar:Logo and Image */
+#logo{
+    margin: 10px 15px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 8px;
+}
+    /* Navigation Bar:List Styling  */
+    #navbar{
+        position: sticky;
+        display: flex;
+        top: 0px;
+        /* margin:10px; */
+    }
+    #navbar ul{
+        display: flex;
+        margin: 30px 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #navbar li{
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    #navbar li a{
+        color: white;
+        display: block;
+        padding: 0px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    #navbar li a:hover{
+        color: black;
+        background-color:white;
+    }
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(245, 236, 236);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+.box{
+    margin: 0px;
+    display: flex;
+    padding: 34px;
+    margin: 5px 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 2px solid brown;
+    background-color: rgb(252, 249, 237);
+    border-radius: 28px;
+    width: 1000px;
+    height: 250px;
+}
+
+.box img{
+    height: 160px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.services{
+    margin: 34px;
+    display: flex;
+}
+.box p{
+    font-family: 'Bree Serif', serif;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/contact.jpg);
+}
+
+
+/* Clients Section  */
+#client-section{
+    
+    color: black;
+    position: relative;
+    /* height: 650px; */
+    background: url(/contact.us.jpg);
+    opacity: 0.9;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    z-index: -1;
+   
+    
+}
+
+#clients img{
+    padding: 0px 14px;
+    height: 70px;
+    padding: 9px 50px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    border-radius: 9px;
+    font-size: 0.6rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+ 
+}  
+
+
+
+
+/* Utility Classes */
+.h-primary{
+     color:black;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem; 
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem; 
+    padding: 12px;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+.sec-h1{
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem; 
+    padding: 12px;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+
